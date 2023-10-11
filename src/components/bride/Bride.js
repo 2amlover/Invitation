@@ -10,9 +10,9 @@ import Invite from "./invitcard/Invite";
 const Bride = () => {
   return (
     <div>
-      <div className="preshoot mb-3">
+      {/* <div className="preshoot mb-3">
         <PreShoot />
-      </div>
+      </div> */}
       <div className="savedate mb-3">
         <Savedate />
       </div>

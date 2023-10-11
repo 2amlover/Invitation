@@ -19,6 +19,9 @@ const QR = () => {
         <Link to={contentPageURL} className="btn btn-primary px-5">
           Scan me
         </Link>
+          {/* <Link to="/content" className="btn btn-primary px-5">
+          Scan me
+        </Link> */}
       </div>
     </div>
   );
