@@ -16,12 +16,12 @@ const QR = () => {
       </div>
       <div className="open-button mt-4">
         {/* The Link component should point to the content page */}
-        {/* <Link to={contentPageURL} className="btn btn-primary px-5">
-          Scan me
-        </Link> */}
-          <Link to="/content" className="btn btn-primary px-5">
+        <Link to={contentPageURL} className="btn btn-primary px-5">
           Scan me
         </Link>
+          {/* <Link to="/content" className="btn btn-primary px-5">
+          Scan me
+        </Link> */}
       </div>
     </div>
   );
