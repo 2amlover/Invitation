@@ -1,0 +1,52 @@
+.save-date-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .subtext {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .names {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff3e6c; /* Attractive text color */
+  }
+  
+  .subtext {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(232, 118, 137); 
+    font-weight: bold;/* Subtle text color */
+  }
+  .subtext1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #4c4c4c; /* Subtle text color */
+  }
+  .save-text {
+    color: #ff3e6c; /* Attractive text color for "Save the date" */
+  }
+  
+  .date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff3e6c; /* Attractive text color for the date */
+  }
+  
+  .button {
+    background-color: #ff3e6c; 
+    color: #fff; 
+    font-size: 18px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
