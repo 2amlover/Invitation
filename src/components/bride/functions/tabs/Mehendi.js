@@ -8,8 +8,8 @@ const Mehendi = () => {
 
   return (
     <div>
-      <img src={MehendiImage} alt="" style={imageSize} />
-      <div className="card border-warning mb-2 mt-2 rounded-0" style={{ maxWidth: '18rem', marginLeft: '17px' }}>
+      <img src={MehendiImage} alt="" style={imageSize} width={320}/>
+      <div className="card border-warning mb-2 mt-2 rounded-0" style={{ maxWidth: '20rem', marginLeft: '18px' }}>
       <div className="card-body text-start p-2">
         <h5 className="names">Mehendi</h5>
         <p className="card-text mb-1">October 16, 2023, Wednesday</p>
