@@ -12,36 +12,12 @@ const SaveDate = () => {
       location: "Venue Name",
     };
 
-    const params = [
-      'BEGIN:VCALENDAR',
-      'VERSION:2.0',
-      'PRODID:-//Example Corp.//iCal 4.0//EN',
-      'CALSCALE:GREGORIAN',
-      'METHOD:PUBLISH',
-      'BEGIN:VEVENT',
-      `UID:${new Date().toISOString()}`,
-      `DTSTAMP:${new Date().toISOString()}`,
-      `DTSTART:${event.start.toISOString()}`,
-      `DTEND:${event.end.toISOString()}`,
-      `SUMMARY:${event.summary}`,
-      `DESCRIPTION:${event.description}`,
-      `LOCATION:${event.location}`,
-      'END:VEVENT',
-      'END:VCALENDAR',
-    ];
+    const startDateStr = event.start.toISOString().replace(/-|:|\.\d+/g, "");
+    const endDateStr = event.end.toISOString().replace(/-|:|\.\d+/g, "");
 
-    const calendarData = params.join('\n');
+    const calendarUrl = `webcal://example.com?start=${startDateStr}&end=${endDateStr}&summary=${encodeURIComponent(event.summary)}&description=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}`;
 
-    // Create a data URI with the calendar data
-    const dataUri = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(calendarData);
-
-    // Create an anchor element to trigger the user's calendar app
-    const a = document.createElement('a');
-    a.href = dataUri;
-    a.download = 'WeddingDate.ics';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    window.open(calendarUrl, '_blank');
   };
 
   return (
